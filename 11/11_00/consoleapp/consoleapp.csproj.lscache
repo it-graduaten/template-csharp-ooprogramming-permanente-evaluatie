@@ -23,9 +23,9 @@ RunAnalyzers=
 RunAnalyzersDuringLiveAnalysis=
 SolutionPath=<PATH>../11_00.sln
 TargetFrameworkIdentifier=.NETCoreApp
-TargetPath=<PATH>bin/Debug/net8.0/consoleapp.dll
-TargetRefPath=<PATH>obj/Debug/net8.0/ref/consoleapp.dll
-TemporaryDependencyNodeTargetIdentifier=net8.0
+TargetPath=<PATH>bin/Debug/net10.0/consoleapp.dll
+TargetRefPath=<PATH>obj/Debug/net10.0/ref/consoleapp.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
 /noconfig
@@ -43,8 +43,8 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 /debug:portable
 /filealign:512
 /optimize-
-/out:obj\Debug\net8.0\consoleapp.dll
-/refout:obj\Debug\net8.0\refint\consoleapp.dll
+/out:obj\Debug\net10.0\consoleapp.dll
+/refout:obj\Debug\net10.0\refint\consoleapp.dll
 /target:exe
 /warnaserror-
 /utf8output
@@ -55,14 +55,14 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 [sourceFiles]
 GlobalUsings.cs
 Models/Zwembad.cs
-obj/Debug/net8.0/
+obj/Debug/net10.0/
  .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
  consoleapp.AssemblyInfo.cs
  consoleapp.GlobalUsings.g.cs
 Program.cs
 
 [metadataReferences]
-<NUGET>/microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+<NUGET>/microsoft.netcore.app.ref/8.0.25/ref/net10.0/
  Microsoft.CSharp.dll
  Microsoft.VisualBasic.Core.dll
  Microsoft.VisualBasic.dll
@@ -241,4 +241,4 @@ Program.cs
 
 [analyzerConfigFiles]
 <DOTNET>/sdk/10.0.104/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
-obj/Debug/net8.0/consoleapp.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net10.0/consoleapp.GeneratedMSBuildEditorConfig.editorconfig

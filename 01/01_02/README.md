@@ -40,3 +40,555 @@ Maak een keuze: 5
 
 Huidige configuratie: Kanaal: 4 - Volume 7
 ```
+
+## Fuzz Test Cases
+
+Below are the automatically generated input/output expectations.
+
+---
+
+### Case 1
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 2 - Volume: 3
+```
+
+**Input:**
+
+```
+4
+1
+4
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 2 - Volume: 3
+```
+
+---
+
+### Case 2
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+2
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 1 - Volume: 5
+```
+
+**Input:**
+
+```
+1
+2
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 1 - Volume: 5
+```
+
+---
+
+### Case 3
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 2 - Volume: 5
+```
+
+**Input:**
+
+```
+4
+1
+3
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 2 - Volume: 5
+```
+
+---
+
+### Case 4
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 4 - Volume: 4
+```
+
+**Input:**
+
+```
+1
+1
+1
+4
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 4 - Volume: 4
+```
+
+---
+
+### Case 5
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+2
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 2 - Volume: 6
+```
+
+**Input:**
+
+```
+2
+3
+4
+3
+1
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 2 - Volume: 6
+```
+
+---
+
+### Case 6
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 3 - Volume: 5
+```
+
+**Input:**
+
+```
+1
+4
+1
+3
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 3 - Volume: 5
+```
+
+---
+
+### Case 7
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+2
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 1 - Volume: 5
+```
+
+**Input:**
+
+```
+4
+2
+3
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 1 - Volume: 5
+```
+
+---
+
+### Case 8
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+1
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 3 - Volume: 6
+```
+
+**Input:**
+
+```
+3
+1
+1
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 3 - Volume: 6
+```
+
+---
+
+### Case 9
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+2
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+3
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 1 - Volume: 6
+```
+
+**Input:**
+
+```
+4
+3
+2
+3
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 1 - Volume: 6
+```
+
+---
+
+### Case 10
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+4
+Kies een optie:
+1. Kanaal verhogen
+2. Kanaal verlagen
+3. Volume verhogen
+4. Volume verlagen
+5. Stop
+5
+Kanaal: 1 - Volume: 4
+```
+
+**Input:**
+
+```
+4
+5
+```
+
+**Expected Output:**
+
+```
+Kanaal: 1 - Volume: 4
+```
+
+---

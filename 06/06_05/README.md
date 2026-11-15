@@ -257,7 +257,3 @@ Maak een keuze (1-9): 1
 
 Bedankt om de woning applicatie te gebruiken!
 ```
-
-## Oplossing
-
-De oplossing voor deze opdracht [vind je hier!](https://gitpub.sebastiaanh.com/public/web/ceee4f4a-4330-4561-a785-913b487f1f76)
