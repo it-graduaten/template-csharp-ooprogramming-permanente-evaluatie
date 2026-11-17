@@ -75,3 +75,34 @@ Snelheid: 50
 Passagiers: 1
 Deuren: Gesloten
 ```
+
+## Fuzz Test Cases
+
+Below are the automatically generated input/output expectations.
+
+---
+
+### Case 1
+
+**Complete console output:**
+
+```
+Snelheid: 100
+Passagiers: 20
+Deuren: Gesloten
+```
+
+**Input:**
+
+```
+```
+
+**Expected Output:**
+
+```
+Snelheid: 100
+Passagiers: 20
+Deuren: Gesloten
+```
+
+---

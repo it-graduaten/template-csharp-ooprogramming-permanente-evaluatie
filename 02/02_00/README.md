@@ -49,3 +49,534 @@ Programmeren: 15
 Netwerken: 8
 Helaas u bent niet geslaagd!
 ```
+
+## Fuzz Test Cases
+
+Below are the automatically generated input/output expectations.
+
+---
+
+### Case 1
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 10
+Geef een score voor netwerken: -5
+Ada
+---
+Programmeren: 10
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+10
+-5
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 10
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 2
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: -5
+Geef een score voor netwerken: 10
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+-5
+10
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 3
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 25
+Geef een score voor netwerken: 10
+Ada
+---
+Programmeren: 20
+Netwerken: 10
+Proficiat u bent geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+25
+10
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 20
+Netwerken: 10
+Proficiat u bent geslaagd!
+```
+
+---
+
+### Case 4
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 9
+Geef een score voor netwerken: -5
+Ada
+---
+Programmeren: 9
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+9
+-5
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 9
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 5
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 15
+Geef een score voor netwerken: 20
+Ada
+---
+Programmeren: 15
+Netwerken: 20
+Proficiat u bent geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+15
+20
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 15
+Netwerken: 20
+Proficiat u bent geslaagd!
+```
+
+---
+
+### Case 6
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 25
+Geef een score voor netwerken: 15
+Ada
+---
+Programmeren: 20
+Netwerken: 15
+Proficiat u bent geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+25
+15
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 20
+Netwerken: 15
+Proficiat u bent geslaagd!
+```
+
+---
+
+### Case 7
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 0
+Geef een score voor netwerken: 10
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+0
+10
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 8
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: -5
+Geef een score voor netwerken: 10
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+-5
+10
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 10
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 9
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: -5
+Geef een score voor netwerken: 15
+Ada
+---
+Programmeren: 0
+Netwerken: 15
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+-5
+15
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 15
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 10
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 0
+Geef een score voor netwerken: -5
+Ada
+---
+Programmeren: 0
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+0
+-5
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 11
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 0
+Geef een score voor netwerken: 15
+Ada
+---
+Programmeren: 0
+Netwerken: 15
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+0
+15
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 15
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 12
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 15
+Geef een score voor netwerken: 9
+Ada
+---
+Programmeren: 15
+Netwerken: 9
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+15
+9
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 15
+Netwerken: 9
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 13
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 10
+Geef een score voor netwerken: 9
+Ada
+---
+Programmeren: 10
+Netwerken: 9
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+10
+9
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 10
+Netwerken: 9
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 14
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: -5
+Geef een score voor netwerken: 20
+Ada
+---
+Programmeren: 0
+Netwerken: 20
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+-5
+20
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 0
+Netwerken: 20
+Helaas u bent niet geslaagd!
+```
+
+---
+
+### Case 15
+
+**Complete console output:**
+
+```
+Geef een naam: Ada
+Geef een score voor programmeren: 20
+Geef een score voor netwerken: -5
+Ada
+---
+Programmeren: 20
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+**Input:**
+
+```
+Ada
+20
+-5
+```
+
+**Expected Output:**
+
+```
+Ada
+---
+Programmeren: 20
+Netwerken: 0
+Helaas u bent niet geslaagd!
+```
+
+---

@@ -14,3 +14,513 @@
 ## Console applicatie
 
 Schrijf een programma waarmee de gebruiker de gegevens behorende tot een tamagochi kan beheren. De gebruiker zal vanaf het opstarten steeds de keuze krijgen uit een menu om zijn actie met betrekking tot de tamagochi te bepalen. Hierna word telkens een stand van zaken getoond. Dit proces blijft lopen tot de gebruiker de stop optie kiest uit het keuzemenu.
+
+## Fuzz Test Cases
+
+Below are the automatically generated input/output expectations.
+
+---
+
+### Case 1
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+2
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+2
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+---
+
+### Case 2
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+1
+Hoeveel eenheden eten geef je? 1
+Tamagotchi Milo: Gevoel = 4 - Honger = 6
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 6
+```
+
+**Input:**
+
+```
+Milo
+1
+1
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 6
+Tamagotchi Milo: Gevoel = 3 - Honger = 6
+```
+
+---
+
+### Case 3
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+1
+Hoeveel eenheden eten geef je? 5
+Tamagotchi Milo: Gevoel = 4 - Honger = 8
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 8
+```
+
+**Input:**
+
+```
+Milo
+1
+5
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 8
+Tamagotchi Milo: Gevoel = 3 - Honger = 8
+```
+
+---
+
+### Case 4
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+2
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+2
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+---
+
+### Case 5
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+3
+Hoeveel eenheden straf geef je? 8
+Tamagotchi Milo: Gevoel = -3 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = -3 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+3
+8
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = -3 - Honger = 5
+Tamagotchi Milo: Gevoel = -3 - Honger = 5
+```
+
+---
+
+### Case 6
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+4
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+4
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+---
+
+### Case 7
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+3
+Hoeveel eenheden straf geef je? 1
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 2 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+3
+1
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+Tamagotchi Milo: Gevoel = 2 - Honger = 5
+```
+
+---
+
+### Case 8
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+2
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+2
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 5 - Honger = 5
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+```
+
+---
+
+### Case 9
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+4
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+4
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+---
+
+### Case 10
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+1
+Hoeveel eenheden eten geef je? 3
+Tamagotchi Milo: Gevoel = 4 - Honger = 8
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 8
+```
+
+**Input:**
+
+```
+Milo
+1
+3
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 8
+Tamagotchi Milo: Gevoel = 3 - Honger = 8
+```
+
+---
+
+### Case 11
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+4
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+4
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 4 - Honger = 5
+Tamagotchi Milo: Gevoel = 3 - Honger = 5
+```
+
+---
+
+### Case 12
+
+**Complete console output:**
+
+```
+Geef een naam voor je Tamagotchi: Milo
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+3
+Hoeveel eenheden straf geef je? 3
+Tamagotchi Milo: Gevoel = 1 - Honger = 5
+Kies een optie:
+1. Eten geven
+2. Liefkozen
+3. Straffen
+4. Gevoel bekijken
+5. Stoppen
+5
+Tamagotchi Milo: Gevoel = 0 - Honger = 5
+```
+
+**Input:**
+
+```
+Milo
+3
+3
+5
+```
+
+**Expected Output:**
+
+```
+Tamagotchi Milo: Gevoel = 1 - Honger = 5
+Tamagotchi Milo: Gevoel = 0 - Honger = 5
+```
+
+---
