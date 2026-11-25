@@ -10,6 +10,10 @@ Deze oefening is een uitbreiding op oefening 04.02
 
 ![Klassediagram](svg/Bankrekening.svg)
 
+**Property `LandCode`**
+
+Geeft de eerste 2 karakters van het IbanNummer terug. Bijvoorbeeld BE voor het IbanNummer BE12 3456 7890 1234
+
 **Methode `ToString()`**
 
 Geeft de tekstuele voorstelling van het object als volgt
