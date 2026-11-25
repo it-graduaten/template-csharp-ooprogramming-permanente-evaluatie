@@ -82,71 +82,6 @@ Toon een tekstuele waarde van de rekening. Gebruik hiervoor de ToString() method
 
 De applicatie sluit af na deze operatie.
 
-### Voorbeelden
-
-```
-1. Spaarrekening
-2. Zichtrekening
-
-Kies een optie: 2
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie      
-
-Kies een optie: 2  
-Hoeveel wil je storten? 1000
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: 1
-Hoeveel wil je afhalen? 200
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: 4
-BE12 3456 7890 1234 -> Je huidig saldo bedraagt 800 euro
-Het minimumbedrag bedraagt: -100 euro
-```
-
-```
-1. Spaarrekening
-2. Zichtrekening
-
-Kies een optie: 1
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie      
-
-Kies een optie: 2  
-Hoeveel wil je storten? 1000
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie      
-
-Kies een optie: 3  
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie      
-
-Kies een optie: 3  
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie      
-
-Kies een optie: 4  
-BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1322,5 euro
-De rentevoet bedraagt: 15%
-```
-
 ## Fuzz Test Cases
 
 Below are the automatically generated input/output expectations.
@@ -158,70 +93,54 @@ Below are the automatically generated input/output expectations.
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+2
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1227.254929700814 euro
-De rentevoet bedraagt: 15%
+Hoeveel wil je storten? 
+1
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 3 euro
+Het minimumbedrag bedraagt: -100 euro
 ```
 
 **Input:**
 
 ```
-1
 2
-1152.0475124405818
-3
 1
-97.59970960585501
+864
+2
+3
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1227.254929700814 euro
-De rentevoet bedraagt: 15%
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 3 euro
+Het minimumbedrag bedraagt: -100 euro
 ```
 
 ---
@@ -231,67 +150,61 @@ De rentevoet bedraagt: 15%
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 531.518375585034 euro
-Het minimumbedrag bedraagt: -100 euro
+Hoeveel wil je afhalen? 
+3
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1 euro
+De rentevoet bedraagt: 15%
 ```
 
 **Input:**
 
 ```
+1
+3
 2
-2
-625.5720950518594
 3
 1
-94.05371946682531
+2
+16
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 531.518375585034 euro
-Het minimumbedrag bedraagt: -100 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1 euro
+De rentevoet bedraagt: 15%
 ```
 
 ---
@@ -301,33 +214,50 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Deze optie is alleen beschikbaar bij een spaarrekening...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1244.8817377187531 euro
+
+Hoeveel wil je afhalen? 
+3
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt -3 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -335,32 +265,23 @@ Het minimumbedrag bedraagt: -100 euro
 
 ```
 2
-2
-1260.060001467541
 3
+2
 1
-15.178263748787915
+294
+1
+1
+275
+1
+3
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1244.8817377187531 euro
+Deze optie is alleen beschikbaar bij een spaarrekening...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt -3 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -371,33 +292,41 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Deze optie is alleen beschikbaar bij een spaarrekening...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 101.3616560325616 euro
+Hoeveel wil je storten? 
+3
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 5 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -405,32 +334,20 @@ Het minimumbedrag bedraagt: -100 euro
 
 ```
 2
-2
-105.0196167200186
 3
-1
-3.657960687457
+2
+3
+2
+2
+347
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 101.3616560325616 euro
+Deze optie is alleen beschikbaar bij een spaarrekening...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 5 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -441,33 +358,50 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Deze optie is alleen beschikbaar bij een spaarrekening...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 303.036616873305 euro
+
+Hoeveel wil je afhalen? 
+3
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+Hoeveel wil je afhalen? 
+1
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt -5 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -475,32 +409,23 @@ Het minimumbedrag bedraagt: -100 euro
 
 ```
 2
-2
-357.92589751961015
 3
 1
-54.889280646305174
+1
+542
+1
+1
+968
+1
+3
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 303.036616873305 euro
+Deze optie is alleen beschikbaar bij een spaarrekening...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt -5 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -511,32 +436,32 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je afhalen? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 703.9968413648623 euro
+Hoeveel wil je storten? 
+1
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -544,36 +469,17 @@ De rentevoet bedraagt: 15%
 
 ```
 1
-2
-613.5914339516099
 3
+2
 1
-1.6333076794890848
+13
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 703.9968413648623 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -584,67 +490,54 @@ De rentevoet bedraagt: 15%
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Hoeveel wil je storten? 
+1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1002.7270939568635 euro
-Het minimumbedrag bedraagt: -100 euro
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 731 euro
+De rentevoet bedraagt: 15%
 ```
 
 **Input:**
 
 ```
-2
-2
-1087.6178727365084
-3
 1
-84.89077877964489
+2
+729
+2
+2
+494
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1002.7270939568635 euro
-Het minimumbedrag bedraagt: -100 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 731 euro
+De rentevoet bedraagt: 15%
 ```
 
 ---
@@ -654,32 +547,35 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+1
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 75.37042387367553 euro
+Hoeveel wil je storten? 
+1
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 2 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -687,36 +583,19 @@ De rentevoet bedraagt: 15%
 
 ```
 1
-2
-125.06319814883082
-3
 1
-68.4522539974799
+818
+2
+2
+28
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 75.37042387367553 euro
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 2 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -727,67 +606,44 @@ De rentevoet bedraagt: 15%
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Hoeveel wil je afhalen? 
+1
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
-1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 99.88266824572689 euro
-Het minimumbedrag bedraagt: -100 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 0 euro
+De rentevoet bedraagt: 15%
 ```
 
 **Input:**
 
 ```
-2
-2
-186.24023565235598
-3
 1
-86.35756740662909
+1
+155
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 99.88266824572689 euro
-Het minimumbedrag bedraagt: -100 euro
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 0 euro
+De rentevoet bedraagt: 15%
 ```
 
 ---
@@ -797,33 +653,61 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 168.5256153998576 euro
+
+Hoeveel wil je afhalen? 
+208
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+Hoeveel wil je storten? 
+1
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 204 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -832,31 +716,26 @@ Het minimumbedrag bedraagt: -100 euro
 ```
 2
 2
-204.82751659226633
-3
+208
 1
-36.30190119240872
+2
+226
+1
+2
+574
+2
+2
+712
+1
+2
+437
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 168.5256153998576 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 204 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -867,33 +746,43 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 640.0306114018825 euro
+
+Hoeveel wil je storten? 
+846
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 849 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -902,31 +791,20 @@ Het minimumbedrag bedraagt: -100 euro
 ```
 2
 2
-677.0880213931351
-3
+846
+2
+2
+797
+2
 1
-37.05740999125261
+563
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 640.0306114018825 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 849 euro
 Het minimumbedrag bedraagt: -100 euro
 ```
 
@@ -937,67 +815,75 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 866.1437127833703 euro
-Het minimumbedrag bedraagt: -100 euro
+
+Hoeveel wil je storten? 
+3
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 2 euro
+De rentevoet bedraagt: 15%
 ```
 
 **Input:**
 
 ```
-2
-2
-899.4735283612391
-3
 1
-33.329815577868764
+3
+2
+2
+201
+2
+1
+407
+1
+1
+674
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 866.1437127833703 euro
-Het minimumbedrag bedraagt: -100 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 2 euro
+De rentevoet bedraagt: 15%
 ```
 
 ---
@@ -1007,32 +893,34 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je storten? 
+1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 838.3940833479321 euro
+Hoeveel wil je storten? 
+2
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 661 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -1041,35 +929,17 @@ De rentevoet bedraagt: 15%
 ```
 1
 2
-767.8163556881939
-3
+660
+2
 1
-44.59472569349083
+472
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 838.3940833479321 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 661 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -1080,67 +950,62 @@ De rentevoet bedraagt: 15%
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Deze optie is alleen beschikbaar bij een spaarrekening...
+Hoeveel wil je storten? 
+1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+2
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1058.703196051382 euro
-Het minimumbedrag bedraagt: -100 euro
+Hoeveel wil je afhalen? 
+548
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 542 euro
+De rentevoet bedraagt: 15%
 ```
 
 **Input:**
 
 ```
+1
 2
-2
-1072.9912933315509
+548
+1
 3
 1
-14.288097280168712
+3
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 1058.703196051382 euro
-Het minimumbedrag bedraagt: -100 euro
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 542 euro
+De rentevoet bedraagt: 15%
 ```
 
 ---
@@ -1150,32 +1015,45 @@ Het minimumbedrag bedraagt: -100 euro
 **Complete console output:**
 
 ```
+Kies een optie:
 1. Spaarrekening
 2. Zichtrekening
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je storten? 1
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-
-Kies een optie: Hoeveel wil je afhalen? 2
+Hoeveel wil je afhalen? 
+1
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
 1. Afhalen
 2. Storten
 3. Schijf rente bij
 4. Informatie
 
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 65.13176954770772 euro
+Hoeveel wil je afhalen? 
+1
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+Hoeveel wil je afhalen? 
+71
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Kies een optie:
+1. Afhalen
+2. Storten
+3. Schijf rente bij
+4. Informatie
+
+
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 0 euro
 De rentevoet bedraagt: 15%
 ```
 
@@ -1183,36 +1061,23 @@ De rentevoet bedraagt: 15%
 
 ```
 1
-2
-93.72318716102899
+1
+71
+1
 3
 1
-42.64989568747562
+1
+338
 4
 ```
 
 **Expected Output:**
 
 ```
-1. Spaarrekening
-2. Zichtrekening
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: 1. Afhalen
-2. Storten
-3. Schijf rente bij
-4. Informatie
-Kies een optie: BE12 3456 7890 1234 -> Je huidig saldo bedraagt 65.13176954770772 euro
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+Je hebt niet genoeg saldo om deze opdracht te verwerken...
+BE12 3456 7890 1234 -> Je huidig saldo bedraagt 0 euro
 De rentevoet bedraagt: 15%
 ```
 
