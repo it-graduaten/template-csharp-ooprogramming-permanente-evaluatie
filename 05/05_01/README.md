@@ -10,6 +10,10 @@ Deze oefening is een uitbreiding op oefening 04.02
 
 ![Klassediagram](svg/Bankrekening.svg)
 
+**Constructor**
+
+Het mimimum krijgt een standaardwaarde van -100
+
 **Property `LandCode`**
 
 Geeft de eerste 2 karakters van het IbanNummer terug. Bijvoorbeeld BE voor het IbanNummer BE12 3456 7890 1234
@@ -25,7 +29,7 @@ Geeft de tekstuele voorstelling van het object als volgt
 
 **Constructor**
 
-Het percentage krijgt eens standaardwaarde van 15
+Het percentage krijgt een standaardwaarde van 15
 
 **Methode `ToString()`**
 
