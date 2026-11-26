@@ -44,3 +44,513 @@ Dirk Vanhemel;64
 Jan Pittevils;51
 Herman Brems;34
 ```
+
+## Fuzz Test Cases
+
+Below are the automatically generated input/output expectations.
+
+---
+
+### Case 1
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 2
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 3
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 4
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 5
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 6
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 7
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 8
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 9
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 10
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 11
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 12
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 13
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 14
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 2
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+2
+```
+
+**Expected Output:**
+
+```
+Bedankt en tot ziens!
+```
+
+---
+
+### Case 15
+
+**Complete console output:**
+
+```
+Kies een optie:
+1. Resultaten afdrukken
+2. Afsluiten
+Maak een keuze: 
+1
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+**Input:**
+
+```
+1
+```
+
+**Expected Output:**
+
+```
+Mieke Vreys	89.00	Geslaagd!
+Jef Ooms	78.00	Geslaagd!
+Marie Leysen	56.00	Geslaagd!
+Kristof Gheys	47.00	Niet geslaagd!
+Greet Heyns	95.00	Geslaagd!
+Sofie Leyns	75.00	Geslaagd!
+Dirk Vanhemel	64.00	Geslaagd!
+Jan Pittevils	51.00	Geslaagd!
+Herman Brems	34.00	Niet geslaagd!
+Bedankt en tot ziens!
+```
+
+---
